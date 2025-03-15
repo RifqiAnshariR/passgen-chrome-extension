@@ -1,0 +1,245 @@
+/* Reset default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    width: 250px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* Title styling */
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Label styling */
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Output field */
+output {
+    display: inline-block;
+    width: 86%;
+    height: 32px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+/* Copy button (Copy icon) */
+#copyBtn {
+    display: inline-block;
+    width: 10%;
+    height: 35px;
+    padding: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: right;
+    border: none;
+}
+
+.copy-icon {
+    width: 25px;
+    height: 25px;
+    stroke: black;
+    transition: stroke 0.2s ease-in-out;
+}
+
+#copyBtn:hover .copy-icon {
+    stroke: grey;
+}
+
+/* Copied notification */
+#copyNotification {
+    display: none;
+    position: fixed;
+    bottom: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+}
+
+/* Generate button */
+#generateBtn {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+#generateBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Config button (Gear icon) */
+#openConfigBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.gear-icon {
+    width: 22px;
+    height: 22px;
+    stroke: grey;
+    transition: transform 0.2s ease-in-out;
+}
+
+#openConfigBtn:hover .gear-icon {
+    transform: rotate(30deg);
+    stroke: black;
+}
+
+/* Back button (Arrow icon) */
+#backBtn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    width: 22px;
+    height: 22px;
+    stroke: grey;
+    transition: transform 0.2s ease-in-out;
+}
+
+#backBtn:hover .arrow-icon {
+    transform: translateX(-3px);
+    stroke: black;
+}
+
+/* Styling grup input */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Styling label */
+.label {
+    font-size: 15px;
+    min-width: 100px;
+    margin-top: 5px;
+    margin-bottom: 8.5px;
+}
+
+/* Styling tombol angka */
+.decrement,
+.increment {
+    width: 20px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid #333;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.decrement:hover,
+.increment:hover {
+    background-color: #ddd;
+}
+
+/* Styling input angka */
+.input-value {
+    width: 54.5px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+/* Styling tombol Yes/No */
+.yes-btn,
+.no-btn {
+    width: 50px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #333;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.settings-container {
+    display: flex;
+    gap: 25px;
+    align-items: start;
+    padding-top: 5px;
+}
+
+.left-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Warna default */
+.yes-btn {
+    color: black;
+}
+
+.no-btn {
+    color: black;
+}
+
+/* Warna aktif saat dipilih */
+.yes-btn.active {
+    background-color: green;
+    color: white;
+}
+
+.no-btn.active {
+    background-color: red;
+    color: white;
+}

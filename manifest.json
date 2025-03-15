@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Password Generator Extension",
+  "version": "1.0",
+  "description": "Menerima input teks dan menampilkan hasilnya",
+  "action": {
+    "default_popup": "./src/index.html",
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "48": "icons/icon_48.png",
+      "128": "icons/icon_128.png"
+    },
+    "default_title": "Password Generator Extension"
+  },
+  "permissions": []
+}
